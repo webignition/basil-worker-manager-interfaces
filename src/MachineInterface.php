@@ -28,7 +28,7 @@ interface MachineInterface extends \JsonSerializable
 
     public function getId(): string;
     public function getRemoteId(): ?int;
-    public function setRemoteId(int $remoteId): MachineInterface;
+    public function setRemoteId(int $remoteId): void;
 
     /**
      * @return ProviderInterface::NAME_*
@@ -44,7 +44,7 @@ interface MachineInterface extends \JsonSerializable
     /**
      * @param MachineInterface::STATE_* $state
      */
-    public function setState(string $state): MachineInterface;
+    public function setState(string $state): void;
 
     /**
      * @return string[]
@@ -54,7 +54,7 @@ interface MachineInterface extends \JsonSerializable
     /**
      * @param string[] $ipAddresses
      */
-    public function setIpAddresses(array $ipAddresses): MachineInterface;
+    public function setIpAddresses(array $ipAddresses): void;
 
     /**
      * @return array<string, mixed>
