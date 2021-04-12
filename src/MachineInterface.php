@@ -4,6 +4,7 @@ namespace webignition\BasilWorkerManagerInterfaces;
 
 interface MachineInterface extends \JsonSerializable
 {
+    public const STATE_UNKNOWN = 'unknown';
     public const STATE_CREATE_RECEIVED = 'create/received';
     public const STATE_CREATE_REQUESTED = 'create/requested';
     public const STATE_CREATE_FAILED = 'create/failed';
