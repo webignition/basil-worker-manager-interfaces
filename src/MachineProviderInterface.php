@@ -11,5 +11,5 @@ interface MachineProviderInterface extends \JsonSerializable
     /**
      * @return ProviderInterface::NAME_*
      */
-    public function getProvider(): string;
+    public function getName(): string;
 }
