@@ -2,7 +2,7 @@
 
 namespace webignition\BasilWorkerManagerInterfaces;
 
-interface MachineProviderInterface extends \JsonSerializable
+interface MachineProviderInterface
 {
     public function getId(): string;
     public function getRemoteId(): ?int;
