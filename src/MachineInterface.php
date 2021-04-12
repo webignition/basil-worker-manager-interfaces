@@ -28,9 +28,6 @@ interface MachineInterface extends \JsonSerializable
     ];
 
     public function getId(): string;
-    public function getProvider(): ?MachineProviderInterface;
-    public function setProvider(MachineProviderInterface $machineProvider): void;
-
     public function getName(): string;
 
     /**
