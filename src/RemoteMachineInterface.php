@@ -4,6 +4,11 @@ namespace webignition\BasilWorkerManagerInterfaces;
 
 interface RemoteMachineInterface
 {
+    /**
+     * @return ProviderInterface::NAME_*
+     */
+    public function getProvider(): string;
+
     public function getId(): int;
 
     /**
