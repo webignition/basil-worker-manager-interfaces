@@ -8,6 +8,7 @@ interface MachineInterface extends \JsonSerializable
     public const STATE_FIND_RECEIVED = 'find/received';
     public const STATE_FIND_FINDING = 'find/finding';
     public const STATE_FIND_NOT_FOUND = 'find/not-found';
+    public const STATE_FIND_NOT_FINDABLE = 'find/not-findable';
     public const STATE_CREATE_RECEIVED = 'create/received';
     public const STATE_CREATE_REQUESTED = 'create/requested';
     public const STATE_CREATE_FAILED = 'create/failed';
