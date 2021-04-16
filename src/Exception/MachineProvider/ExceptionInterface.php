@@ -2,14 +2,14 @@
 
 namespace webignition\BasilWorkerManagerInterfaces\Exception\MachineProvider;
 
-use webignition\BasilWorkerManagerInterfaces\RemoteRequestActionInterface;
+use webignition\BasilWorkerManagerInterfaces\MachineActionInterface;
 
 interface ExceptionInterface extends \Throwable
 {
     public function getRemoteException(): \Throwable;
 
     /**
-     * @return RemoteRequestActionInterface::ACTION_*
+     * @return MachineActionInterface::ACTION_*
      */
     public function getAction(): string;
 }
