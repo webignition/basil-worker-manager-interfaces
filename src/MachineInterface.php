@@ -29,6 +29,8 @@ interface MachineInterface extends \JsonSerializable
         self::STATE_CREATE_FAILED,
         self::STATE_DELETE_FAILED,
         self::STATE_DELETE_DELETED,
+        self::STATE_FIND_NOT_FINDABLE,
+        self::STATE_FIND_NOT_FOUND,
     ];
 
     public function getId(): string;
