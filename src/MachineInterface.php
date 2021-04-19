@@ -33,6 +33,11 @@ interface MachineInterface extends \JsonSerializable
         self::STATE_FIND_NOT_FOUND,
     ];
 
+    public const RESETTABLE_STATES = [
+        self::STATE_FIND_NOT_FOUND,
+        self::STATE_CREATE_FAILED,
+    ];
+
     public function getId(): string;
     public function getName(): string;
 
