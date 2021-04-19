@@ -61,6 +61,8 @@ interface MachineInterface extends \JsonSerializable
      */
     public function setIpAddresses(array $ipAddresses): void;
 
+    public function reset(): void;
+
     /**
      * @return array<string, mixed>
      */
